@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/estilo.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" >
+     <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="../css/estilofooter.css">
+        <link rel="stylesheet" href="../css/estilomenu.css">
+         <link rel="stylesheet" href="../css/estilofooter.css">
+  <link rel="stylesheet" href="../icon/style.css">
+<!--<script src="../js/main.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- <script src="../js/menu.js"></script>-->
+</head>
+<body>
+   <script src="../js/main.js"></script>
+ 	<header>
+ 	    <a class="boton_personalizado" href="sesion.html">Iniciar Sesion</a>
+		<span id="button-menu" class="fa fa-bars"></span>
+
+
+         <div class="panel-body">
+                <!-- Aquí vamos a mostrar los datos que recogeremos de sessionStorage y localStorage -->
+                 <p id="pUsr"></p>
+                 <p id="pPsw"></p>
+                 <hr>
+                 <p align="center">
+                   <b>
+                datos en SessionStorage y LocalStorage 
+                   </b>
+                 </p>
+                 <button class="btn btn-lg btn-block btn-success" id="btnSalir">Salir</button>
+        <script>
+      // Tomamos el valor de sessionStorage y localStorage de la siguiente manera:
+      $("#pUsr").text(sessionStorage.usuario);
+      $("#pPsw").text(localStorage.password); 
+ 
+      $("#btnSalir").click(function(){
+        // Con el metodo Clear limpiamos todo lo que tengamos en sessionStorage o localStorage 
+        sessionStorage.clear();
+        localStorage.clear();
+        window.location="index.html";
+      });
+    </script>
+
+    
+		<!--<img src="../img/logo.png" class="logo">-->
+		<nav class="navegacion">
+			<ul class="menu">
+				<!-- TITULAR -->
+				<li class="title-menu"></li>
+				<!-- TITULAR -->
+				 <li class="item-submenu" menu="1">
+						<li><a href="index.html">Inicio</a></li>
+                    
+                        </li>
+                        <li class="item-submenu" menu="1">
+                        <a href="#">Ropa de Caballero</a>
+                        <ul class="submenu">
+                        <li class="title-menu">Ropa de Caballero</li>
+                        <li class="go-back">Inico</li>
+                    <li><a href="camisas.html">Camisas</a></li>
+                        <li><a href="pantalon.html">Pantalones</a></li>
+                    </ul>
+                    <li class="item-submenu" menu="2">
+                        <a href="#">Ropa de Dama</a>
+                        <ul class="submenu">
+                        <li class="title-menu">Ropa de Dama</li>
+                        <li class="go-back">Inico</li>
+                    <li><a href="camisadama.html">Camisas</a></li>
+                        <li><a href="pantalondama.html">Pantalones</a></li>
+                    </ul>
+					
+				</li>
+			</ul>
+		</nav>
+	</header>
+     <div class="pimg1">
+        <div class="ptext">
+        <span class="border">
+                BIENVENIDO.
+             </span>
+         </div>    
+     </div>
+     <section class="section section-light">
+         <h2>¿Qué te ofrecemos? </h2>
+  <div class="container">
+     <div id="left">
+         <h1>Ropa de la Actual temporada.</h1>
+         <P >
+            
+</P>
+     </div>
+     <div id="right">
+         <ul class="ui">
+             <li class="de">
+                 <img src="../img/6.jpg" height="90px">
+                 <span>
+                     <strong>CAMISAS</strong>
+                     <p>Encontraras los mejores diseños en nuestra camisas, donde ofrecemos camisas de vestir, camisas polos y camisetas.</p>
+                 </span>
+
+             </li>
+               <li class="de">
+                 <img src="../img/8.jpg" height="90px">
+                 <span>
+                     <strong>PANTALONES</strong>
+                     <p>Encontraras los mejores pantalones del mercado con una gran calidad y estilo con una gran diversidad de colores, marca y estilo.</p>
+
+                 </span>
+             </li>
+               <li class="de">
+                 <img src="../img/9.jpg" height="90px">
+                 <span>
+                     <strong>VESTIDOS</strong>
+                     <p>Te ofrecemos los mejores estilos y marca de vestidos para todo tipo de ocaciones.</p>
+                 </span>
+             </li>
+         </ul>
+     </div>
+    </div>
+     </section>
+        <div class="pimg2">
+         <div class="ptext">
+             <span class="border">
+                “IR DE COMPRAS ES MAS BARATO QUE IR AL PSICRIATA".
+             </span>
+         </div>
+     </div>
+      <section class="section section-dark1">
+    <h2></h2>
+          <div class="box" style="position: relative; top: 190px;">
+      <div class="layer1" >
+         <h3>¿Quiénes somos?</h3>
+          <p></p>
+      </div>
+  <div class="layer2"></div>
+  <div class="layer3"></div>
+  </div>
+          <div class="box1" style="position: relative; top: -120px;">
+      <div class="layer4">
+         <h3>¿Cuál es nuestra misión?</h3>
+          <p>
+      </div>
+  <div class="layer5"></div>
+  <div class="layer6"></div>
+  </div>
+           <div class="box2" style="position: relative; top: -410px;">
+      <div class="layer7">
+         <h3>¿Cuál es nuestra visión?</h3>
+          <p></p>
+      </div>
+  <div class="layer8"></div>
+  <div class="layer9"></div>
+  </div>
+     </section>
+        <div class="pimg3">
+         <div class="ptext">
+             <span class="border">
+               "LA ELEGANCIA ES UNA DISCIPLINA EN LA VIDA".
+             </span>
+         </div>
+     </div>
+     <section class="section section-dark">
+         <h2>ALGUNOS DE NUESTROS PRODUCTOS</h2>
+           <div class="container12">
+      <div class="card12">
+            <img src="../img/7.jpg">
+            <h4>Camisa de Vestir Negra</h4>
+            <p>$19.99</p>
+            <a href="camisas.html">Ver más</a>
+        </div>
+        <div class="card12">
+            <img src="../img/10.jpg">
+            <h4>Pantalon Marron</h4>
+            <p>$24.99</p>
+            <a href="pantalones.html">Ver más</a>
+        </div>
+        <div class="card12">
+            <img src="../img/11.jpg">
+            <h4>Camisa Blanca Dama</h4>
+            <p>$18.00</p>
+            <a href="camisadama.html">Ver más</a>
+        </div>
+        <div class="card12">
+            <img src="../img/12.jpg">
+            <h4>Pantalon Dama</h4>
+            <p>$27.00</p>
+            <a href="pantalondama.html">Ver más</a>
+        </div>
+         </div>
+         </div> 
+     </section>
+      <div class="pimg1">
+         <div class="ptext">
+             <span class="border">
+                "LA DIFERENCIA ENTRE ESTILO Y MODA ES LA CALIDAD".
+             </span>
+         </div>
+    </div>
+    <footer>
+       <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                   <h1></h1>
+                    <p></p>
+                </div>
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <img src="../icon/facebook.png">
+                        <a href="https://www.facebook.com/AboCam-1856696557729361/?modal=admin_todo_tour" ><label>Síguenos en Facebook</label></a>
+                    </div>
+                    <div class="row">
+                        <img src="../icon/twitter.png">
+                        <a href="https://twitter.com/CamAbout">  <label>Síguenos en Twitter</label></a>
+                    </div>
+                    <div class="row">
+                        <img src="../icon/instagram.png">
+                       <a href="https://www.instagram.com/aboutcames/" ><label>Síguenos en Instagram</label></a>
+                    </div>
+                </div>
+                <div class="colum3">
+                    <h1>Información Contactos</h1>
+                    <div class="row2">
+                        <img src="../icon/house.png">
+                        <label>San Salvador, El salvador.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2018 Todos los Derechos Reservados | <a href=""></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
